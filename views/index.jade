@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p This is a collection of self projects in Node.js
+  p.
+   Try <strong>/api/points</strong> GET and POST with a point
+   {
+     x: 5,
+     y: 10
+   }
+
+  p
+    | Try <strong>/api/points/random </strong>to get a random point.<br>
+    | Hitting this api with a #[strong POST] request will put a random point into the db<br>
+    | (there is no db its just an array haha)
